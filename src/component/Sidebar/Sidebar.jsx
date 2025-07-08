@@ -19,18 +19,12 @@ const Sidebar = () => {
             {topic.title}
           </summary>
 
-          {topic.subtopics.map((sub, subIdx) => (
+          {topic.subtopics.map((item, subIdx) => (
             <details key={subIdx} className="ml-4 mt-2">
               <summary className="cursor-pointer text-base font-medium text-[#474747]">
-                {sub.title}
+                <Link href="#" className="text-[var(--blue)] underline">{item}</Link>
               </summary>
-              <ul className="list-disc pl-5 text-sm text-gray-700 mt-2 flex flex-col gap-1">
-                {sub.items.map((item, i) => (
-                  <li key={i}>
-                    <Link href="#" className="text-[var(--blue)] underline">{item}</Link>
-                  </li>
-                ))}
-              </ul>
+
             </details>
           ))}
         </details>
