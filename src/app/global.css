@@ -32,3 +32,22 @@ h3 {
     display: block;
   }
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+  border-radius: 6px;
+  border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #757575;
+}
